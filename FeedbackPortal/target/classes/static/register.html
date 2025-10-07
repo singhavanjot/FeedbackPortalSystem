@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Feedback Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header id="main-header"></header>
+        <h1>Create an Account</h1>
+        <div id="register-section">
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                 <div class="form-group">
+                    <label for="role">Register as:</label>
+                    <select id="role">
+                        <option value="USER" selected>User</option>
+                        <option value="ADMIN">Admin</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div id="register-status" class="status-message"></div>
+        </div>
+    </div>
+    <script src="/js/register.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
+</html>	
